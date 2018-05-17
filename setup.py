@@ -40,6 +40,7 @@ setup(
                 'config/hk2s.json', 'config/s2hk.json', 'config/s2t.json',
                 'config/s2tw.json', 'config/s2twp.json', 'config/t2hk.json',
                 'config/t2s.json', 'config/t2tw.json', 'config/tw2s.json',
+                'config/ponddy_s2t.json','config/ponddy_t2s.json',
                 'config/tw2sp.json',
                 'dictionary/HKVariants.txt',
                 'dictionary/HKVariantsPhrases.txt',
