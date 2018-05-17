@@ -4,7 +4,7 @@
     "type": "mmseg",
     "dict": {
       "type": "txt",
-      "file": "TSPhrases.txt"
+      "file": "PonndyTSPhrases.txt"
     }
   },
   "conversion_chain": [{
@@ -12,10 +12,10 @@
       "type": "group",
       "dicts": [{
         "type": "txt",
-        "file": "TSPhrases.txt"
+        "file": "PonndyTSPhrases.txt"
       }, {
         "type": "txt",
-        "file": "TSCharacters.txt"
+        "file": "PonndyTSCharacters.txt"
       }]
     }
   }]

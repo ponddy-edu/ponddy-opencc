@@ -159,15 +159,14 @@ class OpenCC:
             dict_chain.append(chain)
         elif dict_dict.get('type') == 'txt':
             filename = dict_dict.get('file')
-            dict_file_path = os.path.dirname(__file__) if (self.conversion).find("ponddy") == -1 else settings.CUSTOM_DATA_URL 
-            dict_file = os.path.join(dict_file_path, DICT_DIR, filename)
+            dict_file = os.path.join(os.path.dirname(__file__), DICT_DIR, filename)
             dict_chain.append(dict_file)
 
     def set_conversion(self, conversion):
         """
         set conversion
         :param conversion: the conversion of usage, options are
-         'hk2s', 's2hk', 's2t', 's2tw', 's2twp', 't2hk', 't2s', 't2tw', 'tw2s', and 'tw2sp'
+         'hk2s', 's2hk', 's2t', 's2tw', 's2twp', 't2hk', 't2s', 't2tw', 'tw2s', 'tw2sp', 'ponddy_s2t' and 'ponddy t2s'
          check the json file names in config directory
         :return: None
         """

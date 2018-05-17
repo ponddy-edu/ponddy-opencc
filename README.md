@@ -1,4 +1,4 @@
-# ponddy-test
+# ponddy 字典修正版
 
 # opencc-python 開放中文轉換 Python
 
@@ -8,6 +8,8 @@
 opencc-python is made by Python with the dictionary files of [OpenCC](https://github.com/BYVoid/OpenCC) which is developed by BYVoid(<byvoid.kcp@gmail.com>).
 
 opencc-python是用Python所寫, 使用由BYVoid(<byvoid.kcp@gmail.com>)所開發的[OpenCC](https://github.com/BYVoid/OpenCC)中的字典檔案.
+
+ponddy-opencc基於yichen0831開發的opencc修正
 
 opencc-python can run with Python2.7 and Python3.x
 
@@ -27,11 +29,13 @@ The package can also be instally from pypi by issuing:
 
 套件也可從pypi安裝, 使用指令:
 
-    pip install opencc-python-reimplemented
+    pip install git+https://github.com/ponddy-edu/ponddy-opencc.git
 
+## 如原先使用opencc 需修改以下內容
+    import opencc ==改成==> from opencc import OpenCC
+    opencc.convert(sentence, config='t2s.json') ==改成==> OpenCC('t2s').convert(sentence)
 
-## Usage 使用方式
-
+## Usage 基本使用方式
     from opencc import OpenCC 
     
     openCC = OpenCC('s2t')  # convert from Simplified Chinese to Traditional Chinese
@@ -61,6 +65,9 @@ Conversions include 轉換包含:
 'tw2s': Traditional Chinese (Taiwan standard) to Simplified Chinese
 
 'tw2sp': Traditional Chinese (Taiwan standard) to Simplified Chinese (with phrases)
+
+** 'ponddy_s2t' : Simplified Chinese to Traditional Chinese for Ponddy
+** 'ponddy_t2s' : Traditional Chinese to Simplified Chinese for Ponddy
 
 ## Issues 問題
 When there are more than one conversion avaiable, only the first one is taken.
