@@ -56,6 +56,10 @@ setup(
                 'dictionary/TWVariants.txt',
                 'dictionary/TWVariantsRev.txt',
                 'dictionary/TWVariantsRevPhrases.txt',
+                'dictionary/PonddySTCharacters.txt',
+                'dictionary/PonddySTPhrases.txt',
+                'dictionary/PonddyTSCharacters.txt',
+                'dictionary/PonddyTSPhrases.txt',
             ]
         },
 )
