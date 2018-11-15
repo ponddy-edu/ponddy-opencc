@@ -139,6 +139,7 @@ class OpenCC:
                         for line in f:
                             key, value = line.strip().split('\t')
                             map_dict[key] = value
+                            map_dict[value] = value
                     chain_data.append(map_dict)
                     self.dict_cache[item] = map_dict
                 else:
