@@ -9,8 +9,8 @@ if __name__ == '__main__':
         print('Require Python3 to run')
         sys.exit(0)
 
-    words_t = '克制'
-    words_s = '克制'
+    words_t = '梁偉'
+    words_s = '梁偉'
     openCC_ponddy_t2s = OpenCC('ponddy_t2s')
     tword_ponddy_t2s_result = openCC_ponddy_t2s.convert(words_t)
     sword_ponddy_t2s_result = openCC_ponddy_t2s.convert(words_s)
