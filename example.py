@@ -9,8 +9,8 @@ if __name__ == '__main__':
         print('Require Python3 to run')
         sys.exit(0)
 
-    words_t = '我主要是跑步和打網球，我覺得跑步很簡單，也很安靜，可以邊聽音樂邊跑。網球是我最喜歡的運動，我還買了新的網球拍；籃球和足球我沒考慮過，因為我覺得那是男生的運動。我也很喜歡游泳，可是我一游泳就感冒，特別難受。'
-    words_s = '我主要是跑步和打網球，我覺得跑步很簡單，也很安靜，可以邊聽音樂邊跑。網球是我最喜歡的運動，我還買了新的網球拍；籃球和足球我沒考慮過，因為我覺得那是男生的運動。我也很喜歡游泳，可是我一游泳就感冒，特別難受。'
+    words_t = '環境汙染特別嚴重'
+    words_s = '環境汙染特別嚴重'
     openCC_ponddy_t2s = OpenCC('ponddy_t2s')
     tword_ponddy_t2s_result = openCC_ponddy_t2s.convert(words_t)
     sword_ponddy_t2s_result = openCC_ponddy_t2s.convert(words_s)
