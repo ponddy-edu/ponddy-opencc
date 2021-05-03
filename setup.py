@@ -8,7 +8,7 @@ def readme():
 
 setup(
         name='opencc-python-reimplemented',
-        version='1.1.2',
+        version='1.1.3',
         description='OpenCC made with Python',
         long_description=readme(),
         url='https://github.com/ponddy-edu/ponddy-opencc.git',

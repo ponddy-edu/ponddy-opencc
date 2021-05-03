@@ -9,7 +9,7 @@ if __name__ == '__main__':
         print('Require Python3 to run')
         sys.exit(0)
 
-    words_t = '這裡有個著名的粽子，附注他目前買一送一，老闆平台審核及平台审核，胡同和胡同之間不知道那是什麼了。'
+    words_t = '這裡有個著名的粽子，附注他目前買一送一，老闆平台審核及平台审核，胡同和胡同之間不知道那是什麼了，阿娘在大灶前面殺了舞孃。'
     words_s = '這裡有個著名的粽子，附注他目前買一送一，老闆平台審核及平台审核，胡同和胡同之間不知道那是什麼了。'
     openCC_ponddy_t2s = OpenCC('ponddy_t2s')
     tword_ponddy_t2s_result = openCC_ponddy_t2s.convert(words_t)
